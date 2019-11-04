@@ -26,14 +26,14 @@
   --white: #fff;
   --gray: #868e96;
   --gray-dark: #343a40;
-  --primary: #e6a756;
+  /* --primary: #e6a756;
   --secondary: #2f170f;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #343a40; */
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;

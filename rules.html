@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -6,19 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Code The Web</title>
   <meta name="description" content="Portfolio, projects, and cats.">
-  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="../assets/css/styles.min.css">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
   <!-- favicon stuff -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png" content="#0000">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
-  <link rel="manifest" href="../assets/img/site.webmanifest">
-  <link rel="mask-icon" href="../assets/img/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="https://txwes.edu/media/twu/style-assets/images/favicon.ico" type="image/x-icon">
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/ff20e459c8.js" crossorigin="anonymous"></script>
   <style>
@@ -39,10 +34,31 @@
       -moz-animation-direction: reverse;
       animation-direction: reverse;
     }
+    body {
+        /* background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed; */
+        background: url('assets/img/BlueBG.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .card-link {
+      text-decoration: none;
+      font-family: Raleway;
+      color: black;
+    }
+    .card-header {
+      background-color: rgba(86,126,230,0.9);
+    }
+    .card-body {
+      background-color: rgba(188, 201, 246,0.9);
+    }
   </style>
 </head>
 
-<body style="background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('../assets/img/bg.jpg');background-image: url(&quot;../assets/img/bg.png&quot;);">
+<!-- <body style="background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('assets/img/blueBG.jpg');background-image: url('assets/img/blueBG.jpg');"> -->
+<body>
   <h1 class="text-center text-white d-none d-lg-block site-heading" style="background-color: rgba(16,15,47,0.9);padding: 170px;padding-top: 170px;margin-bottom: 0px;margin-top: 0px;">
     <img data-bs-hover-animate="pulse" style="width:150px; height: 150px;" src="https://txwes.edu/media/communications-office/brand-toolbox/txwes-logos/TxWesShieldIcon.png" alt="logo">
     <br><br>
@@ -55,7 +71,10 @@
         <ul class="nav navbar-nav mx-auto">
           <li class="nav-item" role="presentation"><a class="nav-link" href="https://cs.txwes.edu">Home</a></li>
           <li class="nav-item" role="presentation"><a class="nav-link" href="#rules">Rules</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#deadlines">Deadlines</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item" role="presentation"><a class="nav-link" href="#help">Useful Links</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#faq">FAQ | Questions</a></li>
         </ul>
       </div>
     </div>
@@ -68,23 +87,23 @@
             <div class="bg-faded rounded p-5">
               <h2 class="section-heading mb-4"><span class="section-heading-upper">Dimensions Club</span><span class="section-heading-lower text-center">Code The Web Competition</span></h2>
               <h5>Web Development Competition</h5><br>
-              <h3>Objective: Redesign the TXWES CS Website</h3>
-
+              <h3>Objective:</h3>
+              <h5>Redesign the Texas Wesleyan Computer Science website. Gain valuable experience that will help you move up in the future. </h5>
               <ul>
-                  <li>Keep existing site content</li>
-                  <li>Cater to target audience: Students & Faculty</li>
-                  <li>Interactive Website</li>
-                  <li>Mobile friendly</li>
+                  <li>Keep existing site content(links etc)</li>
+                  <li>Create a website with the target audience in mind: Current students & faculty of the CS department</li>
+                  <li>Interactive and mobile friendly website</li>
                   <li>Organized and easy to use</li>
                   <li>Contact page</li>
                   <ul>
                     <li>A way to subscribe or unsubscribe from the mailing list</li>
+                    <li>Social Media links</li>
+                    <li>What else would <i>you</i> as a student would like to see there?</li>
                   </ul>
-                  <li>Social Media links</li>
               </ul>
               <h3 id="rules">Rules:</h3>
               <ul>
-                <li>Don't use bootstrap themes</li>
+                <li>Don't use Bootstrap (or any other) themes</li>
                 <li>Don’t use website builders</li>
                 <ul>
                   <li>Wix, Wordpress, Tumblr, etc</li>
@@ -92,8 +111,23 @@
                 <li>No malicious content</li>
                 <li>Don't plagiarize</li>
               </ul>
+              <h3 id="deadlines">Deadlines:</h3>
+              <p>
+                Rough draft / Mock-up : <span style="color:green">December 20<sup>th</sup></span><br>
+                Final Submission: <span style="color:red">February 20<sup>th</sup> </span><br>
+              </p>
+              <p>
+                Such a long period of time is given to students with understanding that some might not have prior experience in web development, but would like to learn and participate. This is also an amazing opportunity for resume building!
+              </p>
+              <h3 id="contact">Questions?</h3>
+              <h6>For any questions contact:</h6>
+              <ul>
+                <li><a href="mailto:vslysenko@txwes.edu">Veronika Lysenko</a> and <a href="mailto:eaayala@txwes.edu">Edward Ayala</a> </li>
+                <li> <a href="mailto:yzhang@txwes.edu">Dr. Zhang</a></li>
+              </ul>
               <h3 id="help">Useful Links:</h3>
               <ul>
+                <li> <a href="https://docs.google.com/presentation/d/1AdpU4KzGTXnuj6YBEeKGl4F2shZ66G-7Rcntq_F7sBQ/edit?usp=sharing">Slideshow from the meeting</a> </li>
                 <li> <a href="https://www.w3schools.com/html/">Learn HTML</a> </li>
                 <ul>
                   <li>HTML is the standard markup <i>language</i> for Web pages.</li>
@@ -119,6 +153,92 @@
                   <li>Free and open-source Photoshop alternative, great for making logos, banners, and more!</li>
                 </ul>
               </ul>
+              <h5 class="text-center">If you feel like you found other helpful resources that are not listed here, feel free to suggest links via email to any member of Dimensions Club. </h5>
+              <br>
+              <h3 id="faq">FAQ | Common Questions</h3>
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#FAQ1">
+                      Where do I submit my work? <i class="fa fa-angle-down"></i>
+                    </a>
+                  </div>
+                  <div id="FAQ1" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>
+                      Email <a href="mailto:vslysenko@txwes.edu?subject=Code the Web Submission">vslysenko@txwes.edu</a> or <a href="mailto:eaayala@txwes.edu?subject=Code the Web Submission">eaayala@txwes.edu</a> (subject to change)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#FAQ2">
+                      Who will be judging the competition? <i class="fa fa-angle-down"></i>
+                    </a>
+                  </div>
+                  <div id="FAQ2" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>
+                        <ul>
+                          <li>The final code will be judged by Y. Zhang and S. Rodriguez.</li>
+                          <li>The mock up will not be judged, as it is purely for your own experience in selling websites.</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#FAQ3">
+                      What is a mock-up? <i class="fa fa-angle-down"></i>
+                    </a>
+                  </div>
+                  <div id="FAQ3" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul>
+                        <li>A mock-up is a visual way of representing a website (website’s pages). Depending on the level of details, a mock-up can have only some or all visual properties of a final solution. </li>
+                        <li>It is simply an image (or PDF). </li>
+                        <li>Free Tools: <a href="https://www.mockplus.com/blog/post/website-mockup-tools">Mockup Tools</a> </li>
+                        <li>The mock-up will not be judged, as it is purely for your own experience in selling websites.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#FAQ4">
+                      Can we work in groups for this competition? <i class="fa fa-angle-down"></i>
+                    </a>
+                  </div>
+                  <div id="FAQ4" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>
+                        Yes. The prize money will be split in that case. Include all names in the submission.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#MORE">
+                      Any other questions? <i class="fa fa-angle-down"></i>
+                    </a>
+                  </div>
+                  <div id="MORE" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>
+                        Contact us via email <a href="mailto:vslysenko@txwes.edu?subject=Code the Web Question">Veronika</a> or <a href="mailto:eaayala@txwes.edu?subject=Code the Web Question">Edward</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
               <br><br>
               <div class="mx-auto text-center">
                 <a href="https://cs.txwes.edu" class="btn" style="background: yellow;"><i style="font-size: 150px; color: black; text-decoration: none; text-align:center;" class="fas fa-graduation-cap"></i><h3>TXWES CS Website</h3></a>
@@ -133,11 +253,12 @@
   <footer class="footer text-faded text-center py-5" style="background-color: rgba(16,15,47,0.9);">
     <div class="container">
       <p class="m-0 small">Copyright&nbsp;©&nbsp;Dimensions Club 2019</p>
+      <p class="m-0 small">Last updated 12-09-2019 - Edward</p>
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/script.min.js"></script>
+  <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>

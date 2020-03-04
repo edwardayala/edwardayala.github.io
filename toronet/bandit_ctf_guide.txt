@@ -1,0 +1,173 @@
+overthewire.org - bandit
+
+Notes:
+* Logout of current user with: exit
+* Login to other users with: ssh bandit#@bandit.labs.overthewire.org -p 2220
+	* REPLACE # WITH THE NEXT USER NUMBER ex. ssh bandit5@bandit.labs.overthewire.org -p 2220
+* Copy and paste with  RIGHT CLICK
+
+Level 0:
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+bandit0
+
+Level 0 -> Level 1:
+bandit0@bandit:~$ ls
+readme
+bandit0@bandit:~$ cat readme
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1 <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+Level1 -> Level 2:
+bandit1@bandit:~$ ls
+-
+bandit1@bandit:~$ cat ./-
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9 <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+Level 2 -> Level 3:
+bandit2@bandit:~$ ls
+spaces in this filename
+bandit2@bandit:~$ cat spaces\ in\ this\ filename
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+Level 3 -> Level 4: 
+bandit3@bandit:~$ ls -a inhere/
+.  ..  .hidden
+bandit3@bandit:~$ cat inhere/.hidden
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+Level 4 -> Level 5:
+*** Repeat: cat inhere/./-file0# for each file until you find the password ***
+bandit4@bandit:~$ ls
+inhere
+bandit4@bandit:~$ ls inhere/
+-file00  -file01  -file02  -file03  -file04  -file05  -file06  -file07  -file08  -file09
+bandit4@bandit:~$ cat inhere/./-file07
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+Level 5 -> Level 6:
+bandit5@bandit:~$ ls
+inhere
+bandit5@bandit:~$ ls inhere/
+maybehere00  maybehere02  maybehere04  maybehere06  maybehere08  maybehere10  maybehere12  maybehere14  maybehere16  maybehere18
+maybehere01  maybehere03  maybehere05  maybehere07  maybehere09  maybehere11  maybehere13  maybehere15  maybehere17  maybehere19
+
+** look at all those chickens - i mean folders, inside each of these folders is a lot of files too! **
+** if you type ls -lsa inhere/* (the star * is a wildcard - meaning ALL files) it will list out every file in every folder **
+** but thats still a lot to look through, so lets use grep to filter out what we know the file is! **
+** the most unique property of the file is the 1033 byte size, so lets look for files that are 1033 bytes! **
+
+bandit5@bandit:~$ ls -lsa inhere/* | grep 1033
+ 4 -rw-r-----  1 root bandit5 1033 Oct 16  2018 .file2
+
+** Oh cool, .file2 is the only file thats 1033 bytes in size! **
+** but we don't know what folder its in, so we could just go through each folder to find it again **
+
+bandit5@bandit:~$ ls -lsa inhere/maybehere## | grep 1033
+
+** repeat for each ## until we find that file! **
+
+bandit5@bandit:~$ ls -lsa inhere/maybehere07 | grep 1033
+ 4 -rw-r-----  1 root bandit5 1033 Oct 16  2018 .file2
+
+** Its in folder 07, neat! **
+
+bandit5@bandit:~$ cat inhere/maybehere07/.file2
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7 <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+** This probably can be done using the find command but this works too **
+
+Level 6 -> Level 7:
+** Quick and easy way - although its a bit cluttered **
+** Use find | https://www.cyberciti.biz/faq/how-do-i-find-all-the-files-owned-by-a-particular-user-or-group/ **
+** Find file owned by user **
+** The syntax is: **
+** find directory-location -user {username} -name {file-name} **
+
+bandit6@bandit:~$ find / -user bandit7 -group bandit6
+
+** You'll see lots of files that say Permission denied - ignore those and look at the files without it **
+
+/var/lib/dpkg/info/bandit7.password <- this one looks interesting
+
+bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+Level 7 -> Level 8:
+bandit7@bandit:~$ ls
+data.txt
+
+** I wouldnt recomend running cat data.txt - but go for it if ya want **
+
+bandit7@bandit:~$ cat data.txt | grep millionth
+millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+
+Level 8 -> Level 9:
+** use sort and uniq **
+** sort - sorts file **
+** uniq -c counts each file and shows num of occurences **
+
+bandit8@bandit:~$ sort data.txt | uniq -c
+     10 07iR6PwHwihvQ3av1fqoRjICCulpoyms
+     10 0ob6rCn4D4jQ6KCiaT5hmOdWFrm2quR1
+     ...
+     10 tWwjd16fG17vGdjutfOygVTjEGxlijOS
+     10 uBRx9inQTeaDZAuzEb2MadWXmkH8uW4O
+      1 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+     10 vBo3qbjNEF2d3meGEkRfc3mKpjtiDz1i
+     10 VElUBEIhJ4yBgOBSN05WgtV2rF6kkGdz
+     ...
+     10 yXGLvp7UaeiDKxLGXQYlWuRWdIgeCaT0
+     10 YzZX7E35vOa6IQ9SRUGdlEpyaiyjvWXE
+
+Level 9 -> Level 10:
+** start by reading the whole file with strings **
+
+bandit9@bandit:~$ strings data.txt
+
+** now filter out what you know the string starts with '==' **
+
+bandit9@bandit:~$ strings data.txt | grep ==
+2========== the
+========== password
+========== isa
+========== truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+Level 10 -> Level 11:
+bandit10@bandit:~$ cat data.txt
+VGhlIHBhc3N3b3JkIGlzIElGdWt3S0dzRlc4TU9xM0lSRnFyeEUxaHhUTkViVVBSCg==
+bandit10@bandit:~$ base64 --help
+Usage: base64 [OPTION]... [FILE]
+Base64 encode or decode FILE, or standard input, to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -d, --decode          decode data
+  -i, --ignore-garbage  when decoding, ignore non-alphabet characters
+  -w, --wrap=COLS       wrap encoded lines after COLS character (default 76).
+                          Use 0 to disable line wrapping
+
+      --help     display this help and exit
+      --version  output version information and exit
+
+The data are encoded as described for the base64 alphabet in RFC 4648.
+When decoding, the input may contain newlines in addition to the bytes of
+the formal base64 alphabet.  Use --ignore-garbage to attempt to recover
+from any other non-alphabet bytes in the encoded stream.
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/base64>
+or available locally via: info '(coreutils) base64 invocation'
+bandit10@bandit:~$ base64 -d data.txt
+The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+Level 11 -> Level 12:
+** using this as a guide on how to decode rot13: https://stackoverflow.com/questions/5442436/using-rot13-and-tr-command-for-having-an-encrypted-email-address **
+bandit11@bandit:~$ ls
+data.txt
+bandit11@bandit:~$ cat data.txt
+Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh
+bandit11@bandit:~$ cat data.txt | tr 'N-ZA-Mn-za-m' 'A-Za-z'
+The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu <- THIS IS THE PASSWORD (COPY & PASTE with RIGHT CLICK)
+
+

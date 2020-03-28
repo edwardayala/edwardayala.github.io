@@ -1,4 +1,6 @@
-"identifier": "com.plus.plus",
+{
+     "name": "PlusPlus Repo",
+     "identifier": "com.plus.plus",
      "apps": [
          {
              "name": "Spotify++",
@@ -24,7 +26,7 @@
              "bundleIdentifier": "com.plus.plus",
             "developerName": "Some Guy",
              "subtitle": "Watch Media on a Box in HD",
-             "version": "idk",
+             "version": "1.4",
              "versionDate": "2020-03-24T14:00:00-07:00",
              "versionDescription": "",
              "downloadURL": "https://github.com/edwardayala/altrepo/raw/master/mediaboxhd_impactor.ipa",
@@ -42,7 +44,7 @@
             "bundleIdentifier": "com.plus.plus",
             "developerName": "Some Guy",
             "subtitle": "YouTube but with ++",
-            "version": "13.02.9_T1.4r-91",
+            "version": "13.02.9",
             "versionDate": "2020-03-24T14:00:00-07:00",
             "versionDescription": "Nothing.",
             "downloadURL": "https://github.com/edwardayala/altrepo/raw/master/YouTubePlus_v13.02.9_T1.4r-91.ipa",
@@ -68,4 +70,7 @@
              "appID": "com.plus.plus",
              "date": "2020-03-25",
              "notify": true
-         }
+        }
+    ],
+    "userInfo": {}
+}

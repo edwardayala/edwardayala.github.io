@@ -33,7 +33,7 @@
              "localizedDescription": "Watch Media on a Box in HD",
              "iconURL": "https://troypoint.com/wp-content/uploads/2018/11/MediaBox-HD-Icon.png",
              "tintColor": "018084",
-             "size": "57384853",
+             "size": 57384853,
              "beta": false,
              "screenshotURLs": [
                "https://raw.githubusercontent.com/themoviedbcontent/imgs/master/app.png"
@@ -51,7 +51,7 @@
             "localizedDescription": "YouTube but without ads, but with ads",
             "iconURL": "https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/85/32/d8/8532d8af-d8e8-478b-5a85-37a847d25c7a/logo_youtube_color-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png",
             "tintColor": "118090",
-            "size": "96887732",
+            "size": 96887732,
             "beta": false,
             "screenshotURLs": [
                "https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/ef/32/ea/ef32ea48-be0d-c1f3-22d7-f44531c5ba0a/mzl.tvydhezj.png/230x0w.png",

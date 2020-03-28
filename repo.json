@@ -1,0 +1,66 @@
+{
+  "name": "MyRepo",
+  "identifier": "com.plus.plus",
+  "userInfo": {},
+  "news": [],
+  "apps": [
+    {
+      "name": "MediaBox HD",
+      "bundleIdentifier": "com.plus.plus",
+      "developerName": "Some Guy",
+      "subtitle": "Watch Media on a Box in HD",
+      "version": "idk",
+      "versionDate": "2020-03-24T14:00:00-07:00",
+      "versionDescription": "",
+      "downloadURL": "https://github.com/edwardayala/altrepo/raw/master/mediaboxhd_impactor.ipa",
+      "localizedDescription": "Watch Media on a Box in HD",
+      "iconURL": "https://troypoint.com/wp-content/uploads/2018/11/MediaBox-HD-Icon.png",
+      "tintColor": "018084",
+      "size": "57384853",
+      "beta": false,
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/themoviedbcontent/imgs/master/app.png"
+      ]
+    },
+    {
+      "name": "Spotify++",
+      "bundleIdentifier": "com.plus.plus",
+      "developerName": "Some Guy",
+      "subtitle": "Spotify, but its free",
+      "version": "8.4.75",
+      "versionDate": "2020-03-24T14:00:00-07:00",
+      "versionDescription": "Nothing.",
+      "downloadURL": "https://github.com/edwardayala/altrepo/raw/master/Spotify%2B%2B%20v8.4.75.ipa",
+      "localizedDescription": "\"Premium\" Spotify",
+      "iconURL": "https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/39/7b/57/397b57dd-13d8-c317-b4f5-324385c198f3/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png",
+      "tintColor": "018084",
+      "size": "63941935",
+      "beta": false,
+      "screenshotURLs": [
+        "https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/d3/a3/2e/d3a32e70-144e-cbf7-e908-5e5acdb5e035/mzl.nshlthpl.png/230x0w.png",
+        "https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/e9/31/53/e93153ac-0ea4-7a61-cb58-dc0ff7504ef7/mzl.abblbown.png/230x0w.png",
+        "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/3a/70/d1/3a70d1d0-b4ce-9341-b3f0-b5bcd9d6993f/mzl.eyavsafn.png/230x0w.png"
+      ]
+    },
+    {
+      "name": "YouTube++",
+      "bundleIdentifier": "com.plus.plus",
+      "developerName": "Some Guy",
+      "subtitle": "YouTube but with ++",
+      "version": "13.02.9_T1.4r-91",
+      "versionDate": "2020-03-24T14:00:00-07:00",
+      "versionDescription": "Nothing.",
+      "downloadURL": "https://github.com/edwardayala/altrepo/raw/master/YouTubePlus_v13.02.9_T1.4r-91.ipa",
+      "localizedDescription": "YouTube but without ads, but with ads",
+      "iconURL": "https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/85/32/d8/8532d8af-d8e8-478b-5a85-37a847d25c7a/logo_youtube_color-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png",
+      "tintColor": "118090",
+      "size": "96887732",
+      "beta": false,
+      "screenshotURLs": [
+        "https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/ef/32/ea/ef32ea48-be0d-c1f3-22d7-f44531c5ba0a/mzl.tvydhezj.png/230x0w.png",
+        "https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/ce/16/82/ce16828a-1e38-a1be-f633-0a17e8111d14/mzl.odnjrimv.png/230x0w.png",
+        "https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/09/ed/f9/09edf9a9-eca2-bbe1-b98f-6169836d11e9/mzl.nfxgxmbt.png/230x0w.png"
+      ]
+    }
+  ]
+}

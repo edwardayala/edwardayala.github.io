@@ -4,7 +4,7 @@
      "apps": [
          {
              "name": "Spotify++",
-             "bundleIdentifier": "com.plus.plus",
+             "bundleIdentifier": "com.spotify.plus",
              "developerName": "Someone",
              "subtitle": "Spotify but free",
              "version": "1.8.0",
@@ -23,7 +23,7 @@
          },
          {
              "name": "MediaBox HD",
-             "bundleIdentifier": "com.plus.plus",
+             "bundleIdentifier": "com.mediabox.plus",
             "developerName": "Some Guy",
              "subtitle": "Watch Media on a Box in HD",
              "version": "1.4",
@@ -41,7 +41,7 @@
          },
          {
              "name": "YouTube++",
-            "bundleIdentifier": "com.plus.plus",
+            "bundleIdentifier": "com.youtube.plus",
             "developerName": "Some Guy",
             "subtitle": "YouTube but with ++",
             "version": "13.02.9",

@@ -5,7 +5,7 @@
          {
              "name": "Spotify++",
              "bundleIdentifier": "com.spotify.plus",
-             "developerName": "Someone",
+             "developerName": "julioverne",
              "subtitle": "Spotify but free",
              "version": "1.0",
              "versionDate": "2020-03-24T00:00:00-00:00",
@@ -24,7 +24,7 @@
          {
              "name": "MediaBox HD",
              "bundleIdentifier": "com.mediabox.plus",
-            "developerName": "Some Guy",
+            "developerName": "CBOnline",
              "subtitle": "Watch Media on a Box in HD",
              "version": "1.0",
              "versionDate": "2020-03-24T14:00:00-07:00",
@@ -42,7 +42,7 @@
          {
              "name": "YouTube++",
             "bundleIdentifier": "com.youtube.plus",
-            "developerName": "Some Guy",
+            "developerName": "UnlimApps",
             "subtitle": "YouTube but with ++",
             "version": "13.02.9",
             "versionDate": "2020-03-24T14:00:00-07:00",

@@ -58,6 +58,26 @@
                "https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/ce/16/82/ce16828a-1e38-a1be-f633-0a17e8111d14/mzl.odnjrimv.png/230x0w.png",
                "https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/09/ed/f9/09edf9a9-eca2-bbe1-b98f-6169836d11e9/mzl.nfxgxmbt.png/230x0w.png"
             ]
+         },
+          {
+             "name": "Reddit++",
+             "bundleIdentifier": "com.reddit.plus",
+            "developerName": "TFDidThatSay",
+             "subtitle": "Reddit with a little plus plus",
+             "version": "1.0",
+             "versionDate": "2020-03-24T14:00:00-07:00",
+             "versionDescription": "",
+             "downloadURL": "https://github.com/edwardayala/altrepo/raw/master/TFDidThatSay-2020.12.0-0.4-x64-syto203-iOS13.ipa",
+             "localizedDescription": "Reddit without ads and you can see deleted comments",
+             "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/59/c3/70/59c37025-b68e-943b-49cf-99b49d171f02/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png",
+             "tintColor": "D44E06",
+             "size": 55538241,
+             "beta": false,
+             "screenshotURLs": [
+               "https://is4-ssl.mzstatic.com/image/thumb/Purple114/v4/14/ff/f6/14fff658-f33e-2326-4d15-c6e87ca65d3a/pr_source.png/157x0w.png",
+               "https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/c9/62/35/c96235f6-b3dd-1a4a-81b2-efc4de021559/pr_source.png/157x0w.png",
+               "https://is5-ssl.mzstatic.com/image/thumb/Purple114/v4/f0/31/bd/f031bdb6-be88-5d09-1b2e-77b0c3cd7a07/pr_source.png/157x0w.png"
+             ]
          }
      ],
      "news": [

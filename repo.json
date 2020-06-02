@@ -4,7 +4,7 @@
      "apps": [
          {
              "name": "Spotify++",
-             "bundleIdentifier": "com.spotify.plus",
+             "bundleIdentifier": "com.spotify.client",
              "developerName": "julioverne",
              "subtitle": "Spotify but free",
              "version": "1.0",
@@ -23,7 +23,7 @@
          },
          {
              "name": "MediaBox HD",
-             "bundleIdentifier": "com.mediabox.plus",
+             "bundleIdentifier": "mediaboxhd.event.2",
             "developerName": "CBOnline",
              "subtitle": "Watch Media on a Box in HD",
              "version": "1.0",
@@ -61,7 +61,7 @@
          },
           {
              "name": "Reddit++",
-             "bundleIdentifier": "com.reddit.plus",
+             "bundleIdentifier": "syto203.reddit.pp",
             "developerName": "TFDidThatSay",
              "subtitle": "Reddit with a little plus plus",
              "version": "1.0",

@@ -41,7 +41,7 @@
          },
          {
              "name": "YouTube++",
-            "bundleIdentifier": "com.youtube.plus",
+            "bundleIdentifier": "com.google.ios.youtube",
             "developerName": "UnlimApps",
             "subtitle": "YouTube but with ++",
             "version": "13.02.9",
